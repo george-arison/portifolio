@@ -1,0 +1,298 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Rubik&family=Secular+One&display=swap");
+
+:root {
+  --white: #fff;
+  --dark1: #34344e;
+  --dark2: #3a415a;
+  --dark3: #566981;
+  --dark4: #89a7b1;
+  --dadrk5: #cbdad5;
+  --dark6: #2f2f46;
+  --cyan: #70e3ea;
+}
+
+body {
+  background-color: var(--dark1);
+  height: 100vh;
+  font-family: "Lato", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 0.8rem;
+  background-color: var(--dark6);
+  min-height: 50px;
+}
+
+nav {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.navLinks {
+  color: var(--white);
+}
+
+.navLinks:hover {
+  color: var(--dark4);
+  transition: 0.4s;
+  text-decoration: underline;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.firstSection {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 6rem 2rem;
+  flex-wrap: wrap;
+  align-items: center;
+  min-height: 650px;
+}
+
+.firstSection > div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  min-width: 300px;
+}
+
+h1 {
+  font-size: 4rem;
+  color: var(--white);
+  letter-spacing: 8px;
+}
+
+h2 {
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+}
+
+strong {
+  color: var(--cyan);
+}
+
+.firstSection p {
+  color: var(--white);
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+}
+
+.linkAction,
+.projectCards button {
+  padding: 0.6rem;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  text-decoration: none;
+  text-align: center;
+  width: 135px;
+  cursor: pointer;
+  transition: 0.4s;
+  background-color: transparent;
+  border: 1px solid var(--white);
+  color: var(--white);
+}
+
+.linkAction:hover,
+.projectCards button:hover {
+  background-color: var(--dark3);
+  border: 1px solid var(--dark3);
+}
+
+.boxImgMain {
+  max-width: 400px;
+  padding: 1rem;
+}
+
+.imgProfile {
+  width: 400;
+  height: 450px;
+  border-radius: 10%;
+}
+
+.secondSection {
+  background-color: var(--dark2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.title {
+  color: var(--dadrk5);
+  text-align: center;
+}
+
+.secondSection ul {
+  display: flex;
+  gap: 6rem;
+  padding: 2rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.thirdSection {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  min-height: 600px;
+  gap: 4rem;
+  padding-left: 8rem;
+}
+
+.whoAmIImg {
+  width: 250px;
+  height: 350px;
+  border-radius: 10%;
+}
+
+.thirdSection p {
+  color: var(--white);
+  width: 600px;
+  text-align: justify;
+  letter-spacing: 0.1rem;
+  line-height: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.thirdSection > div {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: large;
+}
+
+.fourthSection {
+  background-color: var(--dark2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 6rem;
+  padding: 3rem;
+}
+
+.myProjectsList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+.projectCards {
+  border-radius: 5px;
+  background-color: var(--dark6);
+  box-shadow: rgba(0, 0, 0, 1) 0 5px 10px;
+  padding: 1rem;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  height: 30rem;
+  transition: 0.4s ease-in-out;
+}
+
+.cardButtons {
+  display: flex;
+  gap: 5px;
+}
+
+.projectCards p {
+  color: var(--white);
+  height: 0;
+}
+
+.projectCards .projectText {
+  color: var(--white);
+  position: relative;
+  z-index: 1;
+  top: 0;
+  left: -102%;
+  transition: 0.5s ease-in-out;
+}
+
+.projectCards:hover .projectText {
+  transform: translateX(102%);
+  height: 100%;
+}
+& .projectCards img:hover {
+  opacity: 60%;
+}
+
+.projectCards::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.projectCards button a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.projectCards img {
+  width: 280px;
+  height: 300px;
+  border-radius: 5px;
+}
+
+footer {
+  padding: 2rem;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+footer > div {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 3rem;
+}
+
+footer svg:hover path {
+  fill: var(--dark3);
+  transition: 0.4s;
+}
+
+footer p {
+  color: var(--white);
+}
+
+.backToTop {
+  color: var(--white);
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  visibility: hidden;
+}
+
+.backToTop.visible {
+  visibility: visible;
+}
+.backToTop.visible:hover {
+  color: var(--dark4);
+  transition: 0.4s;
+}

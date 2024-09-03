@@ -1,0 +1,114 @@
+@media (min-width: 280px) and (max-width: 479px) {
+  h1{
+    font-size: 2rem;
+  }
+
+  .imgProfile{
+    height: 300px;
+    width: 250px;
+  }
+  
+  .secondSection  ul{
+    padding: 1rem;
+    gap: 1rem;
+  }
+    & svg {
+    height: 45px;
+    width: 45px;
+  }
+  
+  .thirdSection{
+    justify-content: center;
+    padding-left: 0;
+    padding-bottom: 1.5rem;
+  }  & .thirdSection p {
+    width: 300px;
+  } & .thirdSection > div{
+    font-size: 1rem;
+  }
+
+  .fourthSection {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .projectCards .projectText {
+    position: static;
+    height: 100%;
+  }
+
+  footer > div {
+    gap: 25px;
+    padding: 10px;}
+
+  footer svg {
+    height: 30px;
+    width: 30px;
+  }
+
+}
+
+
+@media (min-width: 480px) and (max-width: 720px) {
+  nav {
+    gap: 1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+
+
+  .boxImgMain {
+    width: 200px;
+    height: 280px;
+  }
+
+  .secondSection  ul{
+    padding: 1rem;
+    gap: 1rem;
+  }
+    & svg {
+    height: 45px;
+    width: 45px;
+  }
+
+  .thirdSection{
+    justify-content: center;
+    padding-left: 0;
+    padding-bottom: 1.5rem;
+  }  & .thirdSection p {
+    width: 300px;
+  } & .thirdSection > div{
+    font-size: 1rem;
+  }
+  .myProjectsList {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .projectCards {
+    width: 300px;
+  }
+
+  .projectCards .projectText {
+    position: static;
+    height: 100%;
+  }
+
+  .projectCards:hover .projectText {
+    transform: translateX(0);
+  }
+
+  footer > div {
+    gap: 25px;
+    padding: 10px;
+  }
+
+  footer svg {
+    height: 35px;
+    width: 35px;
+  }
+}
