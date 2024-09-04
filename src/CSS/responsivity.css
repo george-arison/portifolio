@@ -7,6 +7,11 @@
     height: 300px;
     width: 250px;
   }
+
+  nav {
+    gap: 6px;
+    font-size: 14px;
+  }
   
   .secondSection  ul{
     padding: 1rem;
@@ -19,6 +24,7 @@
   
   .thirdSection{
     justify-content: center;
+    align-items: center;
     padding-left: 0;
     padding-bottom: 1.5rem;
   }  & .thirdSection p {
@@ -35,6 +41,10 @@
   .projectCards .projectText {
     position: static;
     height: 100%;
+  }
+
+  .projectCards:hover .projectText {
+    transform: translateX(0);
   }
 
   footer > div {
@@ -58,8 +68,6 @@
     font-size: 2rem;
   }
 
-
-
   .boxImgMain {
     width: 200px;
     height: 280px;
@@ -76,12 +84,13 @@
 
   .thirdSection{
     justify-content: center;
+    align-items: center;
     padding-left: 0;
     padding-bottom: 1.5rem;
   }  & .thirdSection p {
-    width: 300px;
+    width: 400px;
   } & .thirdSection > div{
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
   .myProjectsList {
     flex-direction: column;
