@@ -96,7 +96,7 @@ strong {
   border-radius: 6px;
   text-decoration: none;
   text-align: center;
-  width: 135px;
+  width: 200px;
   cursor: pointer;
   transition: 0.4s;
   background-color: transparent;
@@ -110,15 +110,10 @@ strong {
   border: 1px solid var(--dark3);
 }
 
-.boxImgMain {
-  max-width: 400px;
-  padding: 1rem;
-}
-
 .imgProfile {
   width: 400;
   height: 450px;
-  border-radius: 10%;
+  border-radius: 12px;
 }
 
 .secondSection {
@@ -148,23 +143,17 @@ strong {
 .thirdSection {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-evenly;
+  align-items: center;
+  justify-content: center;
   min-height: 600px;
+  padding: 15px;
   gap: 20px;
-  padding-left: 8rem;
-}
-
-.whoAmIImg {
-  width: 250px;
-  height: 350px;
-  border-radius: 10%;
 }
 
 .thirdSection p {
   color: var(--white);
-  width: 600px;
-  text-align: justify;
+  width: 700px;
+  text-align: center;
   letter-spacing: 0.1rem;
   line-height: 1.5rem;
   font-size: 1.1rem;
@@ -182,9 +171,10 @@ strong {
 .fourthSection {
   background-color: var(--dark2);
   display: flex;
+  height: 700px;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   gap: 20px;
   padding: 30px 10px;
 }
@@ -192,55 +182,42 @@ strong {
 .myProjectsList {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  gap: 70px;
+  justify-content: center;
+  align-items: center;
+}
+
+.splide {
+  width: 500px;
+  height: 450px;
+  border-radius: 12px;
+  border: 1px solid var;
 }
 
 .projectCards {
-  border-radius: 5px;
-  background-color: var(--dark6);
-  box-shadow: rgba(0, 0, 0, 1) 0 5px 10px;
-  padding: 10px;
-  width: 300px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 30px;
+  padding: 20px 20px;
+  width: 500px;
+  height: 450px;
+  border-radius: 12px;
+  background-color: var(--dark6);
   align-items: center;
-  justify-content: space-between;
-  overflow: hidden;
-  height: 30rem;
-  transition: 0.4s ease-in-out;
+  justify-content: flex-start;
 }
 
 .cardButtons {
   display: flex;
-  gap: 5px;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .projectCards p {
   color: var(--white);
-  height: 0;
 }
 
 .projectCards .projectText {
   color: var(--white);
-  position: relative;
-  z-index: 1;
-  top: 0;
-  left: -102%;
-  transition: 0.4s ease-in-out;
-}
-
-.projectCards:hover {
-  border: 1px solid var(--white);
-}
-& .projectCards:hover .projectText {
-  transform: translateX(102%);
-  height: 100%;
-}
-& .projectCards img:hover {
-  opacity: 60%;
 }
 
 .projectCards button a {
@@ -248,9 +225,9 @@ strong {
   text-decoration: none;
 }
 
-.projectCards img {
-  width: 280px;
-  height: 300px;
+.projectCards video {
+  width: 380px;
+  height: 180px;
   border-radius: 10px;
   border: 1px solid black;
 }

@@ -8,6 +8,11 @@ window.addEventListener("scroll", function (event) {
   }
 });
 
+document.addEventListener( 'DOMContentLoaded', function() {
+  var splide = new Splide( '.splide' );
+  splide.mount();
+} );
+
 
 
 
